@@ -1,0 +1,12 @@
+{
+    "appid": "公众账号",
+    "mch_id": "商户号",
+    "mch_key": "商户密钥",
+    "cert_path": "商户证书pem文件路径",
+    "cert_key_path": "商户证书key文件路径",
+    "test": {
+        "openid": "随便一个用户的openid",
+        "transaction_id": "随便一个订单id",
+        "out_trade_no": "随便一个商户系统内部订单号"
+    }
+}

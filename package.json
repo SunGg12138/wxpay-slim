@@ -1,0 +1,33 @@
+{
+  "name": "wxpay-slim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wxpay",
+    "wx-pay",
+    "微信支付",
+    "微信"
+  ],
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  },
+  "dependencies": {
+    "node-request-slim": "^1.0.7",
+    "xml2js": "^0.4.23"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunGg12138/wxpay-slim.git"
+  },
+  "author": "sungg12138",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SunGg12138/wxpay-slim/issues"
+  },
+  "homepage": "https://github.com/SunGg12138/wxpay-slim#readme"
+}
