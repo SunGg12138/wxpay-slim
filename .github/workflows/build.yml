@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+      types: [opened, synchronize, reopened]
+
+env: # 统一设置环境变量
+  SONARQUBE_URL: https://5940cq2570.zicp.fun
+  SONARQUBE_TOKEN: sqp_9643372469511e7b498c13f0082eb2a94267c970
+  SONARQUBE_PROJECTKEY: wxpay-slim
+  SONARQUBE_PROJECTNAME: wxpay-slim
+
+name: SonarQube Scan
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.17.3
+      - name: npm install
+        run: npm install sonarqube-scanner
+      - name: SonarQube Scan
+        run: npm run sonarqube-scan
